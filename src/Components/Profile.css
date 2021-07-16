@@ -1,21 +1,39 @@
-.choice{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    
-}
-
-.guitar{
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    margin-left: 40px;
-}
-
-.drum{
+.buttongd {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
     width: 200px;
-    height: 100px;
-    margin-left: 20px;
-    margin-right: 40px;
-}
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .buttongd span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .buttongd span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttongd:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttongd:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

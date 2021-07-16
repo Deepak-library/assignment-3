@@ -13,12 +13,26 @@
   }
   
   .password{
-    /* display: block; */
+   
     width: 200px;
     height: 25px;
+    
   }
+ 
   .register{
-    /* display: block; */
-    width: 100px;
-    height: 25px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 15px;
+   
+  }
+  .register:hover {
+    background-color: #01a0d4; /* Green */
+    color: white;
+    font-size: 16px;
   }

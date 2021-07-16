@@ -1,26 +1,40 @@
-.guitar{
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    width: 100%;
-    /* margin-top: 70px; */
-}
+
 
 #drumexercises{
     height: 35px;
     width: 170px;
-}
-
-.submit{
-    width: 100px;
-    height: 35px;
+    border-color: #06db34;
+    border-radius: 3px;
     
 }
+
+.button {
+    transition-duration: 0.4s;
+  }
+
+.submit{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 15px;
+   
+  }
+  .submit:hover {
+    background-color: #01a0d4; /* Green */
+    color: white;
+    font-size: 16px;
+  }
 .tempo-box{
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    /* display: none; */
+    margin:0px auto;
+    width: 350px;
+    background-color: rgba(128, 128, 128, 0.335);
     
 }
 .sep{
@@ -35,8 +49,19 @@
     
 }
 .save{
-    margin:20px;
-    width: 100px;
-    height: 30px;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 15px;
     
-}
+   
+  }
+  .save:hover {
+    background-color: #f63022; /* Green */
+    color: white;
+    font-size: 16px;
+  }

@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 function Drum() {
 
-    let scale = "paradiddles";
+    let scale = "Paradiddles";
     let [showing, setShowing] = useState(0);
     //console.log(scale);
     let [exercise, setExercise] = useState(scale);
@@ -55,11 +55,11 @@ function Drum() {
             <div className="select-option">
 
                 <select id="drumexercises" onChange={(event) => { scale = event.target.value; console.log(scale) }}>
-                    <option value="singles">Singles</option>
-                    <option value="doubles">Doubles</option>
-                    <option value="triplets">Triplets</option>
-                    <option value="paradiddles" selected>Paradiddles</option>
-                    <option value="flams">Flams</option>
+                    <option value="Singles">Singles</option>
+                    <option value="Doubles">Doubles</option>
+                    <option value="Triplets">Triplets</option>
+                    <option value="Paradiddles" selected>Paradiddles</option>
+                    <option value="Flams">Flams</option>
                 </select>
                 <button className="submit" onClick={() => selected()}>Submit</button>
             </div>

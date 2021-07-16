@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 function Guitar() {
 
-    let scale = "minor_pentatonic";
+    let scale = "Minor Pentatonic";
     let [showing,setShowing] = useState(0);
     console.log(scale);
     let [exercise, setExercise] = useState(scale);
@@ -21,7 +21,7 @@ function Guitar() {
     async function addexercise(){
         try{
          await fetch("http://localhost:5000/todos",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({"uname":uname,"instrument":"Guitar","exercise":exercise,"current":current,"goal":goal}) }).then(a=>a.json()).then(console.log);
-        
+         alert("your exercise is saved !!!")
         }catch(e){
          alert("unable to connect server!")
         }
@@ -55,10 +55,10 @@ function Guitar() {
             <div className="select-option">
 
                 <select id="drumexercises" onChange={(event) => { scale = event.target.value; console.log(scale) }}>
-                    <option value="major">Major Scale</option>
-                    <option value="minor">Minor Scale</option>
-                    <option value="blues">Blues Scale</option>
-                    <option value="minor_pentatonic" selected>Minor Pentatonic Scale</option>
+                    <option value="Major">Major Scale</option>
+                    <option value="Minor">Minor Scale</option>
+                    <option value="Blues">Blues Scale</option>
+                    <option value="Minor Pentatonic" selected>Minor Pentatonic Scale</option>
                 </select>
                 <button className="submit" onClick={() => selected()}>Submit</button>
             </div>
@@ -67,13 +67,13 @@ function Guitar() {
                 <div className="current-tempo">
                     <h2>{exercise}</h2>
                     <label>
-                        <b>Current Tempo -</b>
+                        <b>Current Tempo</b>
                     </label>
                     <input type="text" onChange={(e)=>{current=e.target.value}}></input>
                 </div>
                 <div className="goal-tempo">
                     <label>
-                        <b>Goal Tempo -</b>
+                        <b>Goal Tempo</b>
                     </label>
                     <input type="text" onChange={(e)=>{goal=e.target.value}}></input>
                 </div>

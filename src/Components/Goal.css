@@ -1,0 +1,52 @@
+
+.button {
+    transition-duration: 0.4s;
+  }
+
+.delete{
+    background-color: #f44336;
+    border: none;
+    color: white;
+     padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .delete:hover {
+    background-color: #fd0000; /* Green */
+    color: white;
+    font-size: 16px;
+  }
+  
+  .modify{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+     padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+  .modify:hover {
+    background-color: #19be1f; /* Green */
+    color: white;
+    font-size: 16px;
+  }
+  .b1{
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7; /* Green */
+    padding: 10px 20px; 
+    text-align: center;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  .title{
+      color: rgb(0, 76, 255);
+      font-size: 14px;
+  }

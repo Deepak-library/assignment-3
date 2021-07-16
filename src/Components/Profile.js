@@ -53,8 +53,8 @@ function Profile(){
             <h2>Hi, {uname}</h2>
             <h1>Choose Your Instrument</h1>
             <div className="choice">
-            <button className="guitar" onClick={()=>{window.location.href='/guitar';}}><b>Guitar</b></button>
-            <button className="drum" onClick={()=>{window.location.href='/drum';}}><b>Drum</b></button>
+            <button className="buttongd" onClick={()=>{window.location.href='/guitar';}}><span>Guitar</span></button>
+            <button className="buttongd" onClick={()=>{window.location.href='/drum';}}><span>Drum</span></button>
             </div>
                     
             <button onClick={()=>addexercise()}>load exercise</button>

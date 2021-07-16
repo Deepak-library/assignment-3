@@ -27,9 +27,9 @@ async function update(id){
     const renderList = props.list.map((iteam) => {
         return (
         <div key={iteam.id}>
-            {iteam.instrument}--{iteam.exercise}--{iteam.current}--{iteam.goal}-
-            <button onClick={()=>del(iteam.id)}>delete</button>-
-            <button onClick={()=>{update(iteam.id)}}>modify</button>
+            <button className="b1" disabled>{iteam.instrument}</button><button className="b1" disabled>{iteam.exercise}</button><button className="b1" disabled><span className="title">Current </span>{iteam.current}</button><button className="b1" disabled><span className="title">Goal </span>{iteam.goal}</button>
+            <button className="delete" onClick={()=>del(iteam.id)}>delete</button>
+            <button className="modify" onClick={()=>{update(iteam.id)}}>modify</button>
         </div>
         );
       });
