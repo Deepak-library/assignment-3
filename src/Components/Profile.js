@@ -7,7 +7,7 @@ function Profile(){
     var uname=sessionStorage.getItem('uname');
     var l=[];
 
-    async function addexercise(){
+    (async function addexercise(){
         console.log(l);
         try{
          l=await fetch("http://localhost:5000/todos/list",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify({"uname":uname}) });
@@ -16,7 +16,7 @@ function Profile(){
        }catch(e){
          alert(e)
         }
-      }
+      })()
       
       function del(id){
         const newList = excer.filter((iteam) => {
@@ -57,13 +57,12 @@ function Profile(){
             <button className="buttongd" onClick={()=>{window.location.href='/drum';}}><span>Drum</span></button>
             </div>
                     
-            <button onClick={()=>addexercise()}>load exercise</button>
-            <button onClick={()=>{
+            <button className="view" onClick={()=>{
                 for(var ih of l){x.push({'key':ih.id,...ih});};
                x.forEach(e=>{console.log(e);})
                setlist([...x]);
                console.log(excer);
-                }}>see exercise</button>
+                }}>View Exercises</button>
 
           <Goal list={excer} del={del} modify={update}></Goal>
         </div>

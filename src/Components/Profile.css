@@ -37,3 +37,24 @@
     opacity: 1;
     right: 0;
   }
+  .button {
+    transition-duration: 0.4s;
+  }
+
+.view{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 15px;
+   
+  }
+  .view:hover {
+    background-color: #01a0d4; /* Green */
+    color: white;
+    font-size: 16px;
+  }
